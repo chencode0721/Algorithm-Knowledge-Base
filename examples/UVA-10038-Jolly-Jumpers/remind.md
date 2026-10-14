@@ -6,7 +6,7 @@ difficulty: Basic
 tags: Array, Math, Simulation
 status: AC
 solved: 2026-10-14
-review_date: 2026-10-21
+review_date: -
 url: https://onlinejudge.org/external/100/10038.pdf
 ---
 
