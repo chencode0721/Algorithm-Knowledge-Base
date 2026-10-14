@@ -6,7 +6,7 @@ difficulty: 1
 tags: Basic I/O, Implementation, ASCII Art
 status: AC
 solved: 2026-10-14
-review_date: 2026-10-17
+review_date: "-"
 url: https://www.jisuanke.com/problem/T1002
 ---
 
