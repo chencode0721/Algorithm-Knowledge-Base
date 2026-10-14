@@ -8,7 +8,7 @@ import sys
 import unicodedata
 from zoneinfo import ZoneInfo
 
-PLATFORMS = ("Codeforces", "CSES", "UVA", "LeetCode")
+PLATFORMS = ("Codeforces", "CSES", "UVA", "LeetCode", "Jisuanke")
 ROOT = Path(__file__).resolve().parents[1]
 
 
