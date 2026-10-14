@@ -1,4 +1,3 @@
-
 ---
 platform: Jisuanke
 id: T1002
