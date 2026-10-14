@@ -2,7 +2,7 @@
 platform: Jisuanke
 id: T1001
 title: 計算A+B（新手教程）
-difficulty: Beginner
+difficulty: 1
 tags: Basic I/O, Arithmetic
 status: AC
 solved: 2026-10-14
