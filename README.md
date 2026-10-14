@@ -209,7 +209,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ### 接下來 7 天
 
-- 2026-10-17 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md)
+無排定題目。
 
 <sub>提醒：複習後請自行更新該題 `review_date`；系統只負責產生清單，不會自動判定你已經複習。</sub>
 <!-- AUTO-INDEX:END -->
