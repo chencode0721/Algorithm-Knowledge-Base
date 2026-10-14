@@ -25,7 +25,8 @@ def main() -> int:
     parser.add_argument("title", help="題目名稱，例如 'Two Sum'")
     parser.add_argument("--tags", default="Uncategorized", help="逗號分隔，如 'Array, Hash Map'")
     parser.add_argument("--category", help="CSES 專用章節，如 'Introductory Problems'")
-    parser.add_argument("--difficulty", default="-", help="如 Easy / Medium / Hard / 800")
+    parser.add_argument("--difficulty", choices=["-"] + [str(n) for n in range(1, 9)], default="-",
+                        help="自訂 8 級難度：1 啟蒙到 8 大師；- 未分類")
     parser.add_argument("--status", choices=("WIP", "AC"), default="WIP")
     parser.add_argument("--solved", default="-", help="AC 時可填 YYYY-MM-DD，預設今天")
     parser.add_argument("--review", default="-", help="下次複習日期 YYYY-MM-DD")

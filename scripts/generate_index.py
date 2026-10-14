@@ -18,6 +18,42 @@ BEGIN = "<!-- AUTO-INDEX:START -->"
 END = "<!-- AUTO-INDEX:END -->"
 REQUIRED = ("platform", "id", "title", "status", "tags")
 STATUSES = {"AC", "WIP"}
+# Level 1 is the easiest. 9 is used only when a note has not been migrated yet.
+DIFFICULTY_LEVELS = (
+    ("🔴", "啟蒙"),
+    ("🟠", "基礎"),
+    ("🟡", "初階"),
+    ("🟢", "中階"),
+    ("🩵", "進階"),
+    ("🔵", "高階"),
+    ("🟣", "專家"),
+    ("⚫", "大師"),
+)
+
+
+def difficulty_level(raw: str) -> int:
+    """Return 1..8, or 9 for unclassified/legacy values.
+
+    Pre-upgrade values such as 'Beginner', 'Medium', and Codeforces ratings
+    are intentionally NOT mapped to a subjective level automatically.
+    """
+    value = str(raw).strip()
+    return int(value) if value in {str(n) for n in range(1, 9)} else 9
+
+
+def difficulty_label(raw: str) -> str:
+    level = difficulty_level(raw)
+    if level == 9:
+        return "⚪ 未分類"
+    dot, name = DIFFICULTY_LEVELS[level - 1]
+    return f"{dot} Lv.{level} {name}"
+
+
+def difficulty_sort(p: 'Problem') -> tuple[int, int, str, str]:
+    id_is_numeric = p.ident.isdigit()
+    return (difficulty_level(p.difficulty), PLATFORMS.index(p.platform),
+            f"{int(p.ident):012d}" if id_is_numeric else p.ident.casefold(),
+            p.title.casefold())
 
 
 @dataclass(frozen=True)
@@ -136,22 +172,46 @@ def render(entries: list[Problem], today: date) -> str:
         group = [p for p in entries if p.platform == platform]
         success = sum(p.status == "AC" for p in group)
         result.append(f"| {platform} | {success} | {len(group) - success} | {len(group)} |")
-    result += ["", "## 🗂️ 依平台查找", ""]
+    result += [
+        "", "## 🎨 八級難度統計（由易到難）", "",
+        "> 全部平台共用的個人評分，非各判題網站官方難度。`difficulty: 1` 到 `8`；舊值與 `-` 暫列未分類。", "",
+        "| 難度 | 題目數 | AC | WIP |", "|:--|--:|--:|--:|",
+    ]
+    for level in range(1, 10):
+        group = [p for p in entries if difficulty_level(p.difficulty) == level]
+        success = sum(p.status == "AC" for p in group)
+        label = difficulty_label(str(level)) if level <= 8 else "⚪ 未分類"
+        result.append(f"| {label} | {len(group)} | {success} | {len(group)-success} |")
+
+    result += ["", "## 🪜 依難度查找（由易到難）", ""]
+    for level in range(1, 10):
+        group = sorted((p for p in entries if difficulty_level(p.difficulty) == level),
+                       key=difficulty_sort)
+        if not group:
+            continue
+        label = difficulty_label(str(level)) if level <= 8 else "⚪ 未分類"
+        result += [f"### {label}（{len(group)} 題）", ""]
+        result += [f"- {named_link(p)} · `{p.status}` · {', '.join(escape_cell(t) for t in p.tags)}" for p in group]
+        result.append("")
+    if not entries:
+        result += ["尚未收錄題目。", ""]
+
+    result += ["## 🗂️ 依平台查找（同平台按難度排序）", ""]
     for platform in PLATFORMS:
         group = sorted((p for p in entries if p.platform == platform),
-                       key=lambda p: (0, int(p.ident), p.title.casefold()) if p.ident.isdigit() else (1, p.ident.casefold(), p.title.casefold()))
+                       key=difficulty_sort)
         result.append(f"### {platform}（{len(group)} 題）")
         result.append("")
         if not group:
             result += ["目前尚無題目。", ""]
             continue
         result += [
-            "| 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |",
-            "|:--|:--|:--|:--:|:--:|:--:|",
+            "| 難度 | 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |",
+            "|:--|:--|:--|:--|:--:|:--:|:--:|",
         ]
         for p in group:
             title_link = f"[{escape_cell(p.title)}]({relink(p.folder / 'remind.md')})"
-            result.append(f"| {escape_cell(p.ident)} | {title_link} | {', '.join(escape_cell(t) for t in p.tags)} | {p.status} | "
+            result.append(f"| {difficulty_label(p.difficulty)} | {escape_cell(p.ident)} | {title_link} | {', '.join(escape_cell(t) for t in p.tags)} | {p.status} | "
                           f"[.cpp]({relink(p.folder / 'solution.cpp')}) | [.md]({relink(p.folder / 'remind.md')}) |")
         result.append("")
     result += ["## 🧠 依演算法查找", ""]
@@ -162,9 +222,9 @@ def render(entries: list[Problem], today: date) -> str:
     if not tag_groups:
         result += ["目前尚無可分類的題目。", ""]
     for tag in sorted(tag_groups, key=str.casefold):
-        members = sorted(tag_groups[tag], key=lambda p: (PLATFORMS.index(p.platform), p.ident))
+        members = sorted(tag_groups[tag], key=difficulty_sort)
         result += [f"### {escape_cell(tag)}（{len(members)} 題）", ""]
-        result += [f"- {named_link(p)} · `{p.status}`" for p in members]
+        result += [f"- {difficulty_label(p.difficulty)} · {named_link(p)} · `{p.status}`" for p in members]
         result.append("")
     result += ["## 🔁 複習清單（台灣時間）", ""]
     due = sorted((p for p in entries if p.status == "AC" and p.review_date != "-" and p.review_date <= today.isoformat()),
