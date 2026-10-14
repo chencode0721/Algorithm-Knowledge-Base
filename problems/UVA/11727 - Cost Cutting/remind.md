@@ -10,6 +10,7 @@ review_date: "-"
 url: https://onlinejudge.org/external/117/11727.pdf
 ---
 
+
 # UVA 11727 — Cost Cutting
 
 ## 1. 題目摘要
