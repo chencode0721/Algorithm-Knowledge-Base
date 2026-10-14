@@ -1,6 +1,6 @@
 ---
 platform: Jisuanke
-id: T5461
+id: T1068
 title: 救援
 difficulty: 2
 tags: Math, Geometry, Simulation, Implementation
@@ -10,7 +10,7 @@ review_date: 2026-10-17
 url: "-"
 ---
 
-# T5461 — 救援 (Rescue)
+# T1068 — 救援 (Rescue)
 
 ## 1. 題目摘要 (Problem Summary)
 
