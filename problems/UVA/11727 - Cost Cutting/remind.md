@@ -6,7 +6,7 @@ difficulty: 2
 tags: Sorting, Array, Implementation
 status: AC
 solved: 2026-10-14
-review_date: 2026-10-17
+review_date: -
 url: https://onlinejudge.org/external/117/11727.pdf
 ---
 
