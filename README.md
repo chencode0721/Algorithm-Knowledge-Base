@@ -109,7 +109,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ## 📊 刷題統計
 
-**總收錄：2 題｜已 AC：2 題｜進行中：0 題**
+**總收錄：3 題｜已 AC：3 題｜進行中：0 題**
 
 | 平台 | AC | WIP | 總題數 |
 |:--|--:|--:|--:|
@@ -117,7 +117,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 | CSES | 0 | 0 | 0 |
 | UVA | 1 | 0 | 1 |
 | LeetCode | 0 | 0 | 0 |
-| Jisuanke | 1 | 0 | 1 |
+| Jisuanke | 2 | 0 | 2 |
 
 ## 🎨 八級難度統計（由易到難）
 
@@ -125,7 +125,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 | 難度 | 題目數 | AC | WIP |
 |:--|--:|--:|--:|
-| 🔴 Lv.1 啟蒙 | 1 | 1 | 0 |
+| 🔴 Lv.1 啟蒙 | 2 | 2 | 0 |
 | 🟠 Lv.2 基礎 | 1 | 1 | 0 |
 | 🟡 Lv.3 初階 | 0 | 0 | 0 |
 | 🟢 Lv.4 中階 | 0 | 0 | 0 |
@@ -137,9 +137,10 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ## 🪜 依難度查找（由易到難）
 
-### 🔴 Lv.1 啟蒙（1 題）
+### 🔴 Lv.1 啟蒙（2 題）
 
 - [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC` · Basic I/O, Arithmetic
+- [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC` · Basic I/O, Implementation, ASCII Art
 
 ### 🟠 Lv.2 基礎（1 題）
 
@@ -165,11 +166,12 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 目前尚無題目。
 
-### Jisuanke（1 題）
+### Jisuanke（2 題）
 
 | 難度 | 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
 |:--|:--|:--|:--|:--:|:--:|:--:|
 | 🔴 Lv.1 啟蒙 | T1001 | [計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) | Basic I/O, Arithmetic | AC | [.cpp](problems/Jisuanke/T1001-Calculate-A-Plus-B/solution.cpp) | [.md](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) |
+| 🔴 Lv.1 啟蒙 | T1002 | [輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) | Basic I/O, Implementation, ASCII Art | AC | [.cpp](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/solution.cpp) | [.md](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) |
 
 ## 🧠 依演算法查找
 
@@ -181,12 +183,18 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 - 🟠 Lv.2 基礎 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 
-### Basic I/O（1 題）
+### ASCII Art（1 題）
+
+- 🔴 Lv.1 啟蒙 · [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC`
+
+### Basic I/O（2 題）
 
 - 🔴 Lv.1 啟蒙 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
+- 🔴 Lv.1 啟蒙 · [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC`
 
-### Implementation（1 題）
+### Implementation（2 題）
 
+- 🔴 Lv.1 啟蒙 · [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 
 ### Sorting（1 題）
@@ -202,6 +210,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 ### 接下來 7 天
 
 - 2026-10-17 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md)
+- 2026-10-17 · [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md)
 - 2026-10-17 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md)
 
 <sub>提醒：複習後請自行更新該題 `review_date`；系統只負責產生清單，不會自動判定你已經複習。</sub>
