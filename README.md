@@ -109,13 +109,13 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ## 📊 刷題統計
 
-**總收錄：1 題｜已 AC：1 題｜進行中：0 題**
+**總收錄：2 題｜已 AC：2 題｜進行中：0 題**
 
 | 平台 | AC | WIP | 總題數 |
 |:--|--:|--:|--:|
 | Codeforces | 0 | 0 | 0 |
 | CSES | 0 | 0 | 0 |
-| UVA | 0 | 0 | 0 |
+| UVA | 1 | 0 | 1 |
 | LeetCode | 0 | 0 | 0 |
 | Jisuanke | 1 | 0 | 1 |
 
@@ -129,9 +129,11 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 目前尚無題目。
 
-### UVA（0 題）
+### UVA（1 題）
 
-目前尚無題目。
+| 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
+|:--|:--|:--|:--:|:--:|:--:|
+| 11727 | [Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) | Sorting, Array, Implementation | AC | [.cpp](problems/UVA/11727%20-%20Cost%20Cutting/solution.cpp) | [.md](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) |
 
 ### LeetCode（0 題）
 
@@ -149,9 +151,21 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 - [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
 
+### Array（1 題）
+
+- [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
+
 ### Basic I/O（1 題）
 
 - [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
+
+### Implementation（1 題）
+
+- [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
+
+### Sorting（1 題）
+
+- [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 
 ## 🔁 複習清單（台灣時間）
 
@@ -162,6 +176,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 ### 接下來 7 天
 
 - 2026-10-17 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md)
+- 2026-10-17 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md)
 
 <sub>提醒：複習後請自行更新該題 `review_date`；系統只負責產生清單，不會自動判定你已經複習。</sub>
 <!-- AUTO-INDEX:END -->
