@@ -38,9 +38,11 @@ url: "-"
 
 也可以直接寫成：
 
-\[
-T = \left\lceil \sum_{i=1}^{n} \left(\frac{2\sqrt{x_i^2+y_i^2}}{50}+1.5r_i\right) \right\rceil
-\]
+$$
+T = \left\lceil \sum_{i=1}^{n}
+\left(\frac{2\sqrt{x_i^2+y_i^2}}{50}+1.5r_i\right)
+\right\rceil
+$$
 
 **範例**：`(30, 40)` 距離為 `50` 公尺，3 人上、下船合計 `4.5` 分鐘，航行 `2` 分鐘，總共 `6.5` 分鐘，向上取整為 `7`。
 
