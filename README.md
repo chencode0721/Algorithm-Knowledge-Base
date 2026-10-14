@@ -119,7 +119,30 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 | LeetCode | 0 | 0 | 0 |
 | Jisuanke | 1 | 0 | 1 |
 
-## 🗂️ 依平台查找
+## 🎨 八級難度統計（由易到難）
+
+> 全部平台共用的個人評分，非各判題網站官方難度。`difficulty: 1` 到 `8`；舊值與 `-` 暫列未分類。
+
+| 難度 | 題目數 | AC | WIP |
+|:--|--:|--:|--:|
+| 🔴 Lv.1 啟蒙 | 0 | 0 | 0 |
+| 🟠 Lv.2 基礎 | 0 | 0 | 0 |
+| 🟡 Lv.3 初階 | 0 | 0 | 0 |
+| 🟢 Lv.4 中階 | 0 | 0 | 0 |
+| 🩵 Lv.5 進階 | 0 | 0 | 0 |
+| 🔵 Lv.6 高階 | 0 | 0 | 0 |
+| 🟣 Lv.7 專家 | 0 | 0 | 0 |
+| ⚫ Lv.8 大師 | 0 | 0 | 0 |
+| ⚪ 未分類 | 2 | 2 | 0 |
+
+## 🪜 依難度查找（由易到難）
+
+### ⚪ 未分類（2 題）
+
+- [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC` · Sorting, Array, Implementation
+- [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC` · Basic I/O, Arithmetic
+
+## 🗂️ 依平台查找（同平台按難度排序）
 
 ### Codeforces（0 題）
 
@@ -131,9 +154,9 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ### UVA（1 題）
 
-| 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
-|:--|:--|:--|:--:|:--:|:--:|
-| 11727 | [Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) | Sorting, Array, Implementation | AC | [.cpp](problems/UVA/11727%20-%20Cost%20Cutting/solution.cpp) | [.md](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) |
+| 難度 | 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
+|:--|:--|:--|:--|:--:|:--:|:--:|
+| ⚪ 未分類 | 11727 | [Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) | Sorting, Array, Implementation | AC | [.cpp](problems/UVA/11727%20-%20Cost%20Cutting/solution.cpp) | [.md](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) |
 
 ### LeetCode（0 題）
 
@@ -141,31 +164,31 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ### Jisuanke（1 題）
 
-| 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
-|:--|:--|:--|:--:|:--:|:--:|
-| T1001 | [計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) | Basic I/O, Arithmetic | AC | [.cpp](problems/Jisuanke/T1001-Calculate-A-Plus-B/solution.cpp) | [.md](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) |
+| 難度 | 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
+|:--|:--|:--|:--|:--:|:--:|:--:|
+| ⚪ 未分類 | T1001 | [計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) | Basic I/O, Arithmetic | AC | [.cpp](problems/Jisuanke/T1001-Calculate-A-Plus-B/solution.cpp) | [.md](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) |
 
 ## 🧠 依演算法查找
 
 ### Arithmetic（1 題）
 
-- [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
+- ⚪ 未分類 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
 
 ### Array（1 題）
 
-- [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
+- ⚪ 未分類 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 
 ### Basic I/O（1 題）
 
-- [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
+- ⚪ 未分類 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
 
 ### Implementation（1 題）
 
-- [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
+- ⚪ 未分類 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 
 ### Sorting（1 題）
 
-- [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
+- ⚪ 未分類 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 
 ## 🔁 複習清單（台灣時間）
 
