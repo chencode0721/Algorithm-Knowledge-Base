@@ -109,7 +109,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ## 📊 刷題統計
 
-**總收錄：0 題｜已 AC：0 題｜進行中：0 題**
+**總收錄：1 題｜已 AC：1 題｜進行中：0 題**
 
 | 平台 | AC | WIP | 總題數 |
 |:--|--:|--:|--:|
@@ -117,7 +117,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 | CSES | 0 | 0 | 0 |
 | UVA | 0 | 0 | 0 |
 | LeetCode | 0 | 0 | 0 |
-| Jisuanke | 0 | 0 | 0 |
+| Jisuanke | 1 | 0 | 1 |
 
 ## 🗂️ 依平台查找
 
@@ -137,13 +137,21 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 目前尚無題目。
 
-### Jisuanke（0 題）
+### Jisuanke（1 題）
 
-目前尚無題目。
+| 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
+|:--|:--|:--|:--:|:--:|:--:|
+| T1001 | [計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) | Basic I/O, Arithmetic | AC | [.cpp](problems/Jisuanke/T1001-Calculate-A-Plus-B/solution.cpp) | [.md](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) |
 
 ## 🧠 依演算法查找
 
-目前尚無可分類的題目。
+### Arithmetic（1 題）
+
+- [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
+
+### Basic I/O（1 題）
+
+- [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
 
 ## 🔁 複習清單（台灣時間）
 
@@ -153,7 +161,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ### 接下來 7 天
 
-無排定題目。
+- 2026-10-17 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md)
 
 <sub>提醒：複習後請自行更新該題 `review_date`；系統只負責產生清單，不會自動判定你已經複習。</sub>
 <!-- AUTO-INDEX:END -->
