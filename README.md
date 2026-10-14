@@ -211,7 +211,6 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 - 2026-10-17 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md)
 - 2026-10-17 · [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md)
-- 2026-10-17 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md)
 
 <sub>提醒：複習後請自行更新該題 `review_date`；系統只負責產生清單，不會自動判定你已經複習。</sub>
 <!-- AUTO-INDEX:END -->
