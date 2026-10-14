@@ -1,0 +1,57 @@
+
+name: Update Algorithm Index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'problems/**'
+      - 'scripts/generate_index.py'
+      - 'tests/**'
+      - 'README.md'
+      - '.github/workflows/update-index.yml'
+
+  workflow_dispatch:
+
+  schedule:
+    - cron: '13 1 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: algorithm-index-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-index:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Validate parser with unit tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Generate problem index
+        run: python scripts/generate_index.py
+
+      - name: Commit README if changed
+        shell: bash
+        run: |
+          if git diff --quiet -- README.md; then
+            echo 'Index already up-to-date.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git commit -m 'docs: refresh algorithm problem index'
+          git push
