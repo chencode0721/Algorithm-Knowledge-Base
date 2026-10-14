@@ -125,7 +125,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 | 難度 | 題目數 | AC | WIP |
 |:--|--:|--:|--:|
-| 🔴 Lv.1 啟蒙 | 0 | 0 | 0 |
+| 🔴 Lv.1 啟蒙 | 1 | 1 | 0 |
 | 🟠 Lv.2 基礎 | 0 | 0 | 0 |
 | 🟡 Lv.3 初階 | 0 | 0 | 0 |
 | 🟢 Lv.4 中階 | 0 | 0 | 0 |
@@ -133,14 +133,17 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 | 🔵 Lv.6 高階 | 0 | 0 | 0 |
 | 🟣 Lv.7 專家 | 0 | 0 | 0 |
 | ⚫ Lv.8 大師 | 0 | 0 | 0 |
-| ⚪ 未分類 | 2 | 2 | 0 |
+| ⚪ 未分類 | 1 | 1 | 0 |
 
 ## 🪜 依難度查找（由易到難）
 
-### ⚪ 未分類（2 題）
+### 🔴 Lv.1 啟蒙（1 題）
+
+- [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC` · Basic I/O, Arithmetic
+
+### ⚪ 未分類（1 題）
 
 - [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC` · Sorting, Array, Implementation
-- [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC` · Basic I/O, Arithmetic
 
 ## 🗂️ 依平台查找（同平台按難度排序）
 
@@ -166,13 +169,13 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 | 難度 | 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
 |:--|:--|:--|:--|:--:|:--:|:--:|
-| ⚪ 未分類 | T1001 | [計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) | Basic I/O, Arithmetic | AC | [.cpp](problems/Jisuanke/T1001-Calculate-A-Plus-B/solution.cpp) | [.md](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) |
+| 🔴 Lv.1 啟蒙 | T1001 | [計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) | Basic I/O, Arithmetic | AC | [.cpp](problems/Jisuanke/T1001-Calculate-A-Plus-B/solution.cpp) | [.md](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) |
 
 ## 🧠 依演算法查找
 
 ### Arithmetic（1 題）
 
-- ⚪ 未分類 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
+- 🔴 Lv.1 啟蒙 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
 
 ### Array（1 題）
 
@@ -180,7 +183,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ### Basic I/O（1 題）
 
-- ⚪ 未分類 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
+- 🔴 Lv.1 啟蒙 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
 
 ### Implementation（1 題）
 
