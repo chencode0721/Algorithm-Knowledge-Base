@@ -2,7 +2,7 @@
 platform: UVA
 id: 11727
 title: Cost Cutting
-difficulty: Beginner
+difficulty: 2
 tags: Sorting, Array, Implementation
 status: AC
 solved: 2026-10-14
