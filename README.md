@@ -117,6 +117,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 | CSES | 0 | 0 | 0 |
 | UVA | 0 | 0 | 0 |
 | LeetCode | 0 | 0 | 0 |
+| Jisuanke | 0 | 0 | 0 |
 
 ## 🗂️ 依平台查找
 
@@ -133,6 +134,10 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 目前尚無題目。
 
 ### LeetCode（0 題）
+
+目前尚無題目。
+
+### Jisuanke（0 題）
 
 目前尚無題目。
 
