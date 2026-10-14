@@ -127,12 +127,13 @@ Space Complexity：額外使用的記憶體空間。
 
 ## 9. 解題紀錄 (Submission Record)
 
+
+
+<!--
 - Result：WIP
 - Language：C++
 - Solved：-
 - Next Review：-
-
-<!--
 AC 後更新上方紀錄。
 這個區塊是給人看的；
 自動索引主要讀取檔案最上面的中繼資料。
