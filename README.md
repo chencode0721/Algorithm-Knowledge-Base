@@ -109,13 +109,13 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ## 📊 刷題統計
 
-**總收錄：5 題｜已 AC：5 題｜進行中：0 題**
+**總收錄：6 題｜已 AC：6 題｜進行中：0 題**
 
 | 平台 | AC | WIP | 總題數 |
 |:--|--:|--:|--:|
 | Codeforces | 0 | 0 | 0 |
 | CSES | 0 | 0 | 0 |
-| UVA | 1 | 0 | 1 |
+| UVA | 2 | 0 | 2 |
 | LeetCode | 0 | 0 | 0 |
 | Jisuanke | 4 | 0 | 4 |
 
@@ -126,7 +126,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 | 難度 | 題目數 | AC | WIP |
 |:--|--:|--:|--:|
 | 🔴 Lv.1 啟蒙 | 2 | 2 | 0 |
-| 🟠 Lv.2 基礎 | 2 | 2 | 0 |
+| 🟠 Lv.2 基礎 | 3 | 3 | 0 |
 | 🟡 Lv.3 初階 | 1 | 1 | 0 |
 | 🟢 Lv.4 中階 | 0 | 0 | 0 |
 | 🩵 Lv.5 進階 | 0 | 0 | 0 |
@@ -142,8 +142,9 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 - [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC` · Basic I/O, Arithmetic
 - [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC` · Basic I/O, Implementation, ASCII Art
 
-### 🟠 Lv.2 基礎（2 題）
+### 🟠 Lv.2 基礎（3 題）
 
+- [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC` · String, Simulation, Implementation, State Machine
 - [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC` · Sorting, Array, Implementation
 - [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC` · Math, Geometry, Simulation, Implementation
 
@@ -161,10 +162,11 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 目前尚無題目。
 
-### UVA（1 題）
+### UVA（2 題）
 
 | 難度 | 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
 |:--|:--|:--|:--|:--:|:--:|:--:|
+| 🟠 Lv.2 基礎 | 272 | [TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) | String, Simulation, Implementation, State Machine | AC | [.cpp](problems/UVA/272%20-%20TEX%20Quotes/solution.cpp) | [.md](problems/UVA/272%20-%20TEX%20Quotes/remind.md) |
 | 🟠 Lv.2 基礎 | 11727 | [Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) | Sorting, Array, Implementation | AC | [.cpp](problems/UVA/11727%20-%20Cost%20Cutting/solution.cpp) | [.md](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) |
 
 ### LeetCode（0 題）
@@ -208,9 +210,10 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 - 🟠 Lv.2 基礎 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC`
 
-### Implementation（4 題）
+### Implementation（5 題）
 
 - 🔴 Lv.1 啟蒙 · [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC`
+- 🟠 Lv.2 基礎 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC`
 - 🟡 Lv.3 初階 · [Jisuanke T5461 — 人口普查](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md) · `AC`
@@ -219,16 +222,22 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 - 🟠 Lv.2 基礎 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC`
 
-### Simulation（1 題）
+### Simulation（2 題）
 
+- 🟠 Lv.2 基礎 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC`
 
 ### Sorting（1 題）
 
 - 🟠 Lv.2 基礎 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 
-### String（1 題）
+### State Machine（1 題）
 
+- 🟠 Lv.2 基礎 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC`
+
+### String（2 題）
+
+- 🟠 Lv.2 基礎 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC`
 - 🟡 Lv.3 初階 · [Jisuanke T5461 — 人口普查](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md) · `AC`
 
 ## 🔁 複習清單（台灣時間）
@@ -241,6 +250,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 - 2026-10-17 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md)
 - 2026-10-17 · [Jisuanke T5461 — 人口普查](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md)
+- 2026-10-18 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md)
 
 <sub>提醒：複習後請自行更新該題 `review_date`；系統只負責產生清單，不會自動判定你已經複習。</sub>
 <!-- AUTO-INDEX:END -->
