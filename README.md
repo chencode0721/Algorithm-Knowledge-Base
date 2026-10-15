@@ -144,17 +144,17 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ### 🟠 Lv.2 基礎（5 題）
 
+- [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC` · Array, Simulation, Implementation
 - [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC` · String, Simulation, Implementation, State Machine
 - [UVA 483 — Word Scramble](problems/UVA/483%20-%20Word%20Scramble/remind.md) · `AC` · String, Simulation, Implementation
-- [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC` · Sorting, Array, Implementation
 - [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC` · Math, Geometry, Simulation, Implementation
-- [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC` · Array, Simulation, Implementation
+- [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC` · Sorting, Array, Implementation
 
 ### 🟡 Lv.3 初階（1 題）
 
 - [Jisuanke T5461 — 人口普查](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md) · `AC` · Array, String, Frequency Counting, Implementation
 
-## 🗂️ 依平台查找（同平台按難度排序）
+## 🗂️ 依平台查找（最新完成優先）
 
 ### Codeforces（0 題）
 
@@ -180,10 +180,10 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 | 難度 | 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
 |:--|:--|:--|:--|:--:|:--:|:--:|
+| 🟠 Lv.2 基礎 | T1079 | [開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) | Array, Simulation, Implementation | AC | [.cpp](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/solution.cpp) | [.md](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) |
 | 🔴 Lv.1 啟蒙 | T1001 | [計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) | Basic I/O, Arithmetic | AC | [.cpp](problems/Jisuanke/T1001-Calculate-A-Plus-B/solution.cpp) | [.md](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) |
 | 🔴 Lv.1 啟蒙 | T1002 | [輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) | Basic I/O, Implementation, ASCII Art | AC | [.cpp](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/solution.cpp) | [.md](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) |
 | 🟠 Lv.2 基礎 | T1068 | [救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) | Math, Geometry, Simulation, Implementation | AC | [.cpp](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/solution.cpp) | [.md](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) |
-| 🟠 Lv.2 基礎 | T1079 | [開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) | Array, Simulation, Implementation | AC | [.cpp](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/solution.cpp) | [.md](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) |
 | 🟡 Lv.3 初階 | T5461 | [人口普查](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md) | Array, String, Frequency Counting, Implementation | AC | [.cpp](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/solution.cpp) | [.md](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md) |
 
 ## 🧠 依演算法查找
@@ -194,9 +194,9 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ### Array（3 題）
 
-- 🟠 Lv.2 基礎 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC`
 - 🟡 Lv.3 初階 · [Jisuanke T5461 — 人口普查](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md) · `AC`
+- 🟠 Lv.2 基礎 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 
 ### ASCII Art（1 題）
 
@@ -217,13 +217,13 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ### Implementation（7 題）
 
-- 🔴 Lv.1 啟蒙 · [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC`
+- 🟠 Lv.2 基礎 · [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [UVA 483 — Word Scramble](problems/UVA/483%20-%20Word%20Scramble/remind.md) · `AC`
-- 🟠 Lv.2 基礎 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
+- 🔴 Lv.1 啟蒙 · [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC`
-- 🟠 Lv.2 基礎 · [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC`
-- 🟡 Lv.3 初階 · [Jisuanke T5461 — 人口普查](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md) · `AC`
+
+[查看全部 7 題](docs/FULL_INDEX.md)
 
 ### Math（1 題）
 
@@ -231,10 +231,10 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ### Simulation（4 題）
 
+- 🟠 Lv.2 基礎 · [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [UVA 483 — Word Scramble](problems/UVA/483%20-%20Word%20Scramble/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC`
-- 🟠 Lv.2 基礎 · [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC`
 
 ### Sorting（1 題）
 

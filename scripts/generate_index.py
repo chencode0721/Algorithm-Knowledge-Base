@@ -16,6 +16,7 @@ import sys
 PLATFORMS = ("Codeforces", "CSES", "UVA", "LeetCode", "Jisuanke")
 BEGIN = "<!-- AUTO-INDEX:START -->"
 END = "<!-- AUTO-INDEX:END -->"
+MAX_PREVIEW = 5
 REQUIRED = ("platform", "id", "title", "status", "tags")
 STATUSES = {"AC", "WIP"}
 # Level 1 is the easiest. 9 is used only when a note has not been migrated yet.
@@ -156,7 +157,20 @@ def named_link(p: Problem) -> str:
     return f"[{escape_cell(p.platform)} {escape_cell(p.ident)} — {escape_cell(p.title)}]({relink(p.folder / 'remind.md')})"
 
 
-def render(entries: list[Problem], today: date) -> str:
+def recent_first(items: list[Problem]) -> list[Problem]:
+    """AC's newest solved date first; unsolved WIP last; ties deterministic."""
+    return sorted(items, key=lambda p: (p.solved == "-",
+                    -(date.fromisoformat(p.solved).toordinal() if p.solved != "-" else 0),
+                    p.platform, p.ident.casefold(), p.title.casefold()))
+
+
+def preview_footer(group: list[Problem], limit: int | None) -> list[str]:
+    if limit is not None and len(group) > limit:
+        return [f"[查看全部 {len(group)} 題](docs/FULL_INDEX.md)", ""]
+    return []
+
+
+def render(entries: list[Problem], today: date, limit: int | None = MAX_PREVIEW) -> str:
     ac = sum(p.status == "AC" for p in entries)
     result = [
         "> 此區由 `python scripts/generate_index.py` 自動產生。只需修改各題的 `remind.md`；**不要直接改此區**。",
@@ -185,21 +199,20 @@ def render(entries: list[Problem], today: date) -> str:
 
     result += ["", "## 🪜 依難度查找（由易到難）", ""]
     for level in range(1, 10):
-        group = sorted((p for p in entries if difficulty_level(p.difficulty) == level),
-                       key=difficulty_sort)
+        group = recent_first([p for p in entries if difficulty_level(p.difficulty) == level])
         if not group:
             continue
         label = difficulty_label(str(level)) if level <= 8 else "⚪ 未分類"
         result += [f"### {label}（{len(group)} 題）", ""]
-        result += [f"- {named_link(p)} · `{p.status}` · {', '.join(escape_cell(t) for t in p.tags)}" for p in group]
+        result += [f"- {named_link(p)} · `{p.status}` · {', '.join(escape_cell(t) for t in p.tags)}" for p in group[:limit]]
         result.append("")
+        result += preview_footer(group, limit)
     if not entries:
         result += ["尚未收錄題目。", ""]
 
-    result += ["## 🗂️ 依平台查找（同平台按難度排序）", ""]
+    result += ["## 🗂️ 依平台查找（最新完成優先）", ""]
     for platform in PLATFORMS:
-        group = sorted((p for p in entries if p.platform == platform),
-                       key=difficulty_sort)
+        group = recent_first([p for p in entries if p.platform == platform])
         result.append(f"### {platform}（{len(group)} 題）")
         result.append("")
         if not group:
@@ -209,11 +222,12 @@ def render(entries: list[Problem], today: date) -> str:
             "| 難度 | 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |",
             "|:--|:--|:--|:--|:--:|:--:|:--:|",
         ]
-        for p in group:
+        for p in group[:limit]:
             title_link = f"[{escape_cell(p.title)}]({relink(p.folder / 'remind.md')})"
             result.append(f"| {difficulty_label(p.difficulty)} | {escape_cell(p.ident)} | {title_link} | {', '.join(escape_cell(t) for t in p.tags)} | {p.status} | "
                           f"[.cpp]({relink(p.folder / 'solution.cpp')}) | [.md]({relink(p.folder / 'remind.md')}) |")
         result.append("")
+        result += preview_footer(group, limit)
     result += ["## 🧠 依演算法查找", ""]
     tag_groups: dict[str, list[Problem]] = defaultdict(list)
     for p in entries:
@@ -222,10 +236,11 @@ def render(entries: list[Problem], today: date) -> str:
     if not tag_groups:
         result += ["目前尚無可分類的題目。", ""]
     for tag in sorted(tag_groups, key=str.casefold):
-        members = sorted(tag_groups[tag], key=difficulty_sort)
+        members = recent_first(tag_groups[tag])
         result += [f"### {escape_cell(tag)}（{len(members)} 題）", ""]
-        result += [f"- {difficulty_label(p.difficulty)} · {named_link(p)} · `{p.status}`" for p in members]
+        result += [f"- {difficulty_label(p.difficulty)} · {named_link(p)} · `{p.status}`" for p in members[:limit]]
         result.append("")
+        result += preview_footer(members, limit)
     result += ["## 🔁 複習清單（台灣時間）", ""]
     due = sorted((p for p in entries if p.status == "AC" and p.review_date != "-" and p.review_date <= today.isoformat()),
                  key=lambda p: (p.review_date, p.platform, p.ident))
@@ -237,6 +252,21 @@ def render(entries: list[Problem], today: date) -> str:
     result += ([f"- {p.review_date} · {named_link(p)}" for p in upcoming] if upcoming else ["無排定題目。"])
     result += ["", "<sub>提醒：複習後請自行更新該題 `review_date`；系統只負責產生清單，不會自動判定你已經複習。</sub>"]
     return "\n".join(result).rstrip() + "\n"
+
+
+def update_full_index(root: Path, block: str, check: bool) -> bool:
+    target = root / "docs" / "FULL_INDEX.md"
+    content = "# 完整題目索引\n\n[← 返回首頁](../README.md)\n\n" + block.replace("](problems/", "](../problems/")
+    old = target.read_text(encoding="utf-8") if target.exists() else None
+    if check:
+        if old != content:
+            print("docs/FULL_INDEX.md 尚未同步", file=sys.stderr)
+        return old == content
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if old != content:
+        target.write_text(content, encoding="utf-8")
+    print(f"docs/FULL_INDEX.md {'已更新' if old != content else '已是最新'}")
+    return True
 
 
 def update_readme(root: Path, block: str, check: bool) -> bool:
@@ -268,7 +298,9 @@ def main() -> int:
         current = date.fromisoformat(args.today) if args.today else datetime.now(ZoneInfo("Asia/Taipei")).date()
         entries = collect(args.root)
         print(f"已讀取 {len(entries)} 題，AC {sum(p.status == 'AC' for p in entries)} 題")
-        return 0 if update_readme(args.root, render(entries, current), args.check) else 1
+        home_ok = update_readme(args.root, render(entries, current), args.check)
+        full_ok = update_full_index(args.root, render(entries, current, limit=None), args.check)
+        return 0 if home_ok and full_ok else 1
     except (ValueError, OSError) as exc:
         print(f"錯誤：{exc}", file=sys.stderr)
         return 2
