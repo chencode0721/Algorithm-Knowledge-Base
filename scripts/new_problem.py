@@ -8,7 +8,7 @@ import sys
 import unicodedata
 from zoneinfo import ZoneInfo
 
-PLATFORMS = ("Codeforces", "CSES", "UVA", "LeetCode", "Jisuanke")
+PLATFORMS = ("Codeforces", "CSES", "UVA", "LeetCode", "Jisuanke", "Luogu")
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -21,7 +21,7 @@ def slugify(label: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Create a problem and note pair")
     parser.add_argument("platform", choices=PLATFORMS)
-    parser.add_argument("id", help="題號（例如 4A / 10038 / 0001）")
+    parser.add_argument("id", help="題號（例如 4A / 10038 / P10587）")
     parser.add_argument("title", help="題目名稱，例如 'Two Sum'")
     parser.add_argument("--tags", default="Uncategorized", help="逗號分隔，如 'Array, Hash Map'")
     parser.add_argument("--category", help="CSES 專用章節，如 'Introductory Problems'")
@@ -30,7 +30,7 @@ def main() -> int:
     parser.add_argument("--status", choices=("WIP", "AC"), default="WIP")
     parser.add_argument("--solved", default="-", help="AC 時可填 YYYY-MM-DD，預設今天")
     parser.add_argument("--review", default="-", help="下次複習日期 YYYY-MM-DD")
-    parser.add_argument("--url", default="-", help="題目網址")
+    parser.add_argument("--url", default="-", help="題目網址；Luogu 預設自動生成")
     args = parser.parse_args()
 
     if not re.fullmatch(r"[A-Za-z0-9_-]+", args.id):
@@ -58,10 +58,14 @@ def main() -> int:
                 datetime.strptime(val, "%Y-%m-%d")
             except ValueError:
                 parser.error(f"{field} 日期請用 YYYY-MM-DD")
-    # Reject line-injection into front matter, but ordinary colons/spaces in title/URL are OK.
     for key in ("title", "tags", "difficulty", "url"):
         if "\n" in getattr(args, key) or "\r" in getattr(args, key):
             parser.error(f"{key} 不可換行")
+
+    problem_url = args.url
+    if args.platform == "Luogu" and problem_url == "-":
+        problem_url = f"https://www.luogu.com.cn/problem/{args.id}"
+
     substitutions = {
         "{{PLATFORM}}": args.platform,
         "{{ID}}": args.id,
@@ -71,7 +75,7 @@ def main() -> int:
         "{{STATUS}}": args.status,
         "{{SOLVED}}": solved,
         "{{REVIEW_DATE}}": args.review,
-        "{{URL}}": args.url,
+        "{{URL}}": problem_url,
     }
     source = "solution-leetcode.cpp" if args.platform == "LeetCode" else "solution-main.cpp"
     files = {
