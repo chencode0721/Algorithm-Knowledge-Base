@@ -13,7 +13,7 @@ from datetime import datetime
 import re
 import sys
 
-PLATFORMS = ("Codeforces", "CSES", "UVA", "LeetCode", "Jisuanke")
+PLATFORMS = ("Codeforces", "CSES", "UVA", "LeetCode", "Jisuanke", "Luogu")
 BEGIN = "<!-- AUTO-INDEX:START -->"
 END = "<!-- AUTO-INDEX:END -->"
 MAX_PREVIEW = 5
