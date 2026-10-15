@@ -1,0 +1,37 @@
+
+name: Apply Recent Five
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Apply patch
+        run: python apply_recent_five.py .
+
+      - name: Generate README and full index
+        run: python scripts/generate_index.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/generate_index.py README.md docs/FULL_INDEX.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Show latest five problems per category"
+            git push
+          fi
