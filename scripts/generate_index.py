@@ -233,14 +233,21 @@ def render(entries: list[Problem], today: date, limit: int | None = MAX_PREVIEW)
     for p in entries:
         for t in p.tags:
             tag_groups[t].append(p)
+
     if not tag_groups:
         result += ["目前尚無可分類的題目。", ""]
+
     for tag in sorted(tag_groups, key=str.casefold):
-        members = recent_first(tag_groups[tag])
+        members = sorted(
+            recent_first(tag_groups[tag]),
+            key=lambda p: difficulty_level(p.difficulty)
+        )
+
         result += [f"### {escape_cell(tag)}（{len(members)} 題）", ""]
         result += [f"- {difficulty_label(p.difficulty)} · {named_link(p)} · `{p.status}`" for p in members[:limit]]
         result.append("")
         result += preview_footer(members, limit)
+
     result += ["## 🔁 複習清單（台灣時間）", ""]
     due = sorted((p for p in entries if p.status == "AC" and p.review_date != "-" and p.review_date <= today.isoformat()),
                  key=lambda p: (p.review_date, p.platform, p.ident))
