@@ -266,11 +266,11 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 - 2026-10-17 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md)
 - 2026-10-17 · [Jisuanke T5461 — 人口普查](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md)
+- 2026-10-18 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md)
+- 2026-10-18 · [UVA 483 — Word Scramble](problems/UVA/483%20-%20Word%20Scramble/remind.md)
 
 ### 接下來 7 天
 
-- 2026-10-18 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md)
-- 2026-10-18 · [UVA 483 — Word Scramble](problems/UVA/483%20-%20Word%20Scramble/remind.md)
 - 2026-10-22 · [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md)
 
 <sub>提醒：複習後請自行更新該題 `review_date`；系統只負責產生清單，不會自動判定你已經複習。</sub>
