@@ -109,14 +109,14 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 ## 📊 刷題統計
 
-**總收錄：9 題｜已 AC：9 題｜進行中：0 題**
+**總收錄：10 題｜已 AC：10 題｜進行中：0 題**
 
 | 平台 | AC | WIP | 總題數 |
 |:--|--:|--:|--:|
 | Codeforces | 0 | 0 | 0 |
 | CSES | 0 | 0 | 0 |
 | UVA | 3 | 0 | 3 |
-| LeetCode | 0 | 0 | 0 |
+| LeetCode | 1 | 0 | 1 |
 | Jisuanke | 5 | 0 | 5 |
 | Luogu | 1 | 0 | 1 |
 
@@ -127,7 +127,7 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 | 難度 | 題目數 | AC | WIP |
 |:--|--:|--:|--:|
 | 🔴 Lv.1 啟蒙 | 2 | 2 | 0 |
-| 🟠 Lv.2 基礎 | 6 | 6 | 0 |
+| 🟠 Lv.2 基礎 | 7 | 7 | 0 |
 | 🟡 Lv.3 初階 | 1 | 1 | 0 |
 | 🟢 Lv.4 中階 | 0 | 0 | 0 |
 | 🩵 Lv.5 進階 | 0 | 0 | 0 |
@@ -143,15 +143,15 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 - [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC` · Basic I/O, Arithmetic
 - [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC` · Basic I/O, Implementation, ASCII Art
 
-### 🟠 Lv.2 基礎（6 題）
+### 🟠 Lv.2 基礎（7 題）
 
+- [LeetCode 2089 — Find Target Indices After Sorting Array](problems/LeetCode/2089/remind.md) · `AC` · Sorting, Array, Implementation
 - [Luogu P5707 — 【深基2.例12】上学迟到](problems/Luogu/P5707-%E3%80%90%E6%B7%B1%E5%9F%BA2.%E4%BE%8B12%E3%80%91%E4%B8%8A%E5%AD%A6%E8%BF%9F%E5%88%B0/remind.md) · `AC` · Math, Implementation
 - [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC` · Array, Simulation, Implementation
 - [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC` · String, Simulation, Implementation, State Machine
 - [UVA 483 — Word Scramble](problems/UVA/483%20-%20Word%20Scramble/remind.md) · `AC` · String, Simulation, Implementation
-- [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC` · Math, Geometry, Simulation, Implementation
 
-[查看全部 6 題](docs/FULL_INDEX.md)
+[查看全部 7 題](docs/FULL_INDEX.md)
 
 ### 🟡 Lv.3 初階（1 題）
 
@@ -175,9 +175,11 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 | 🟠 Lv.2 基礎 | 483 | [Word Scramble](problems/UVA/483%20-%20Word%20Scramble/remind.md) | String, Simulation, Implementation | AC | [.cpp](problems/UVA/483%20-%20Word%20Scramble/solution.cpp) | [.md](problems/UVA/483%20-%20Word%20Scramble/remind.md) |
 | 🟠 Lv.2 基礎 | 11727 | [Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) | Sorting, Array, Implementation | AC | [.cpp](problems/UVA/11727%20-%20Cost%20Cutting/solution.cpp) | [.md](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) |
 
-### LeetCode（0 題）
+### LeetCode（1 題）
 
-目前尚無題目。
+| 難度 | 題號 | 題目 | 標籤 | 狀態 | 解答 | 筆記 |
+|:--|:--|:--|:--|:--:|:--:|:--:|
+| 🟠 Lv.2 基礎 | 2089 | [Find Target Indices After Sorting Array](problems/LeetCode/2089/remind.md) | Sorting, Array, Implementation | AC | [.cpp](problems/LeetCode/2089/solution.cpp) | [.md](problems/LeetCode/2089/remind.md) |
 
 ### Jisuanke（5 題）
 
@@ -201,8 +203,9 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 - 🔴 Lv.1 啟蒙 · [Jisuanke T1001 — 計算A+B（新手教程）](problems/Jisuanke/T1001-Calculate-A-Plus-B/remind.md) · `AC`
 
-### Array（3 題）
+### Array（4 題）
 
+- 🟠 Lv.2 基礎 · [LeetCode 2089 — Find Target Indices After Sorting Array](problems/LeetCode/2089/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 - 🟡 Lv.3 初階 · [Jisuanke T5461 — 人口普查](problems/Jisuanke/T5461-%E4%BA%BA%E5%8F%A3%E6%99%AE%E6%9F%A5/remind.md) · `AC`
@@ -224,15 +227,15 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 
 - 🟠 Lv.2 基礎 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC`
 
-### Implementation（8 題）
+### Implementation（9 題）
 
 - 🔴 Lv.1 啟蒙 · [Jisuanke T1002 — 輸出馬里奧](problems/Jisuanke/T1002%E8%BC%B8%E5%87%BA%E9%A6%AC%E9%87%8C%E5%A5%A7/remind.md) · `AC`
+- 🟠 Lv.2 基礎 · [LeetCode 2089 — Find Target Indices After Sorting Array](problems/LeetCode/2089/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [Luogu P5707 — 【深基2.例12】上学迟到](problems/Luogu/P5707-%E3%80%90%E6%B7%B1%E5%9F%BA2.%E4%BE%8B12%E3%80%91%E4%B8%8A%E5%AD%A6%E8%BF%9F%E5%88%B0/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [Jisuanke T1079 — 開關燈](problems/Jisuanke/T1079-%E9%96%8B%E9%97%9C%E7%87%88/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [UVA 272 — TEX Quotes](problems/UVA/272%20-%20TEX%20Quotes/remind.md) · `AC`
-- 🟠 Lv.2 基礎 · [UVA 483 — Word Scramble](problems/UVA/483%20-%20Word%20Scramble/remind.md) · `AC`
 
-[查看全部 8 題](docs/FULL_INDEX.md)
+[查看全部 9 題](docs/FULL_INDEX.md)
 
 ### Math（2 題）
 
@@ -246,8 +249,9 @@ url: https://leetcode.com/problems/fruit-into-baskets/
 - 🟠 Lv.2 基礎 · [UVA 483 — Word Scramble](problems/UVA/483%20-%20Word%20Scramble/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [Jisuanke T1068 — 救援](problems/Jisuanke/T1068-%E6%95%91%E6%8F%B4/remind.md) · `AC`
 
-### Sorting（1 題）
+### Sorting（2 題）
 
+- 🟠 Lv.2 基礎 · [LeetCode 2089 — Find Target Indices After Sorting Array](problems/LeetCode/2089/remind.md) · `AC`
 - 🟠 Lv.2 基礎 · [UVA 11727 — Cost Cutting](problems/UVA/11727%20-%20Cost%20Cutting/remind.md) · `AC`
 
 ### State Machine（1 題）
